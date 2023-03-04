@@ -21,12 +21,7 @@ class Post extends Model {}
       allowNull: false,
       unique: true,
     },
-    // dateCreated: {
-    //   type: DataTypes.DATEONLY,
-    //   allowNull: false,
-    //   defaultValue: DataTypes.NOW,
-    // },
-    user_Id: {
+    userId: {
       type: DataTypes.INTEGER,
       references: {
         model: 'user',
